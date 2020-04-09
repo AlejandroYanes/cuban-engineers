@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@types/react-redux": "^7.1.7",
     "expo": "~37.0.3",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -15,14 +16,28 @@
     "react-native-screens": "~2.2.0",
     "react-native-web": "~0.11.7",
     "react-redux": "^7.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@types/react": "~16.9.23",
     "@types/react-native": "~0.61.17",
+    "@types/enzyme": "^3.9.0",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/expect": "^1.20.4",
+    "@types/jest": "^25.1.4",
     "babel-preset-expo": "~8.1.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "faker": "^4.1.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.13.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "tslint-react": "^3.6.0",
+    "tslint-react-hooks": "^2.2.2"
   },
   "private": true
 }

@@ -1,19 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
+import store from './src/redux/store';
+import StoryPointsPicker from './src/experience/StoryPointsPicker';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <Provider store={store}>
+      <View style={styles.container}>
+        <StoryPointsPicker />
+      </View>
+    </Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: '100vw',
-    height: '100vh',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
