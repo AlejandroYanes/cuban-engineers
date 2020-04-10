@@ -12,7 +12,7 @@ interface Props {
 const animatedValue = new Animated.Value(0);
 const animatedStyles = { opacity: animatedValue };
 
-export const Modal: FunctionComponent<Props> = (props) => {
+const Modal: FunctionComponent<Props> = (props) => {
   const { isOpen, closeModal, title, children } = props;
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { mount } from 'enzyme';
-import { Modal } from '../index';
+import Modal from '../index';
 
 const closeModal = jest.fn();
 

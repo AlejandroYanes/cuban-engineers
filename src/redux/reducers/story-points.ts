@@ -15,7 +15,5 @@ export default function storyPoints(state = initialState, action: { type: string
       return { ...state, isOpen: false };
     case SELECT_STORY_POINT:
       return { ...state, storyPoints: payload };
-    default:
-      return state;
   }
 }

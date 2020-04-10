@@ -30,7 +30,7 @@ interface Props {
   selectStoryPoint: (points: number) => void;
 }
 
-const StoryPointsPicker: FunctionComponent<Props> = (props) => {
+export const StoryPointsPicker: FunctionComponent<Props> = (props) => {
   const { isOpen, storyPoints, closeModal, openModal, selectStoryPoint } = props;
 
   const handleOptionSelected = (point) => {
@@ -50,12 +50,12 @@ const StoryPointsPicker: FunctionComponent<Props> = (props) => {
   return (
     <>
       <TouchableOpacity style={pointPickerStyles.container} onPress={openModal}>
-        <StoryPoint points={storyPoints} />
+        <StoryPoint points={storyPoints} testID="selected-story-point" />
         <Text style={pointPickerStyles.label}>Points</Text>
       </TouchableOpacity>
       <Modal title="Story Point Estimation" isOpen={isOpen} closeModal={closeModal}>
         <Text style={pointPickerStyles.description}>Select an estimation for your task</Text>
-        <View style={pointPickerStyles.modalOptions}>
+        <View style={pointPickerStyles.modalOptions} testID="story-point-options">
           {optionElements}
         </View>
       </Modal>
