@@ -5,15 +5,21 @@ export const modalStyles = StyleSheet.create(
   {
     wrapper: {
       position: 'absolute',
-      top: '0',
-      bottom: '0',
-      left: '0',
-      right: '0',
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+      width: '100%',
+      height: '100%',
+      zIndex: 100,
+      opacity: 1,
+      display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
     },
     modal: {
       padding: 12,
+      margin: 12,
       borderRadius: 6,
       backgroundColor: COLORS.DARK,
     },
@@ -32,8 +38,7 @@ export const modalStyles = StyleSheet.create(
       fontSize: 18,
     },
     body: {
-      flexDirection: 'column',
-      paddingTop: '12px',
+      paddingTop: 12,
     },
   },
 );

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Provider } from 'react-redux';
 import store from './src/redux/store';
 import StoryPointsPicker from './src/experience/StoryPointsPicker';
 
-export default function App() {
+const App: FunctionComponent = () => {
   return (
     <Provider store={store}>
       <View style={styles.container}>
@@ -12,7 +12,7 @@ export default function App() {
       </View>
     </Provider>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -22,3 +22,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;

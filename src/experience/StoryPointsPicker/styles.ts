@@ -6,7 +6,7 @@ export const pointPickerStyles = StyleSheet.create(
     container: {
       flexDirection: 'row',
       alignItems: 'center',
-      height: 32,
+      height: 34,
       borderRadius: 16,
       padding: 8,
       backgroundColor: '#e3e5ed',
@@ -21,20 +21,20 @@ export const pointPickerStyles = StyleSheet.create(
     },
     modalOptions: {
       marginTop: 16,
+      flexWrap: 'wrap',
       flexDirection: 'row',
       alignItems: 'center',
     },
     option: {
       alignItems: 'center',
-      marginRight: 8,
-      marginLeft: 8,
+      margin: 8,
     },
     optionPoints: {
       borderColor: COLORS.GRAY,
     },
     optionSelectedPoints: {
       backgroundColor: COLORS.BLUE,
-      borderColor: COLORS.BLUE,
+      borderColor: COLORS.LIGHT_BLUE,
     },
     optionText: {
       color: COLORS.GRAY,

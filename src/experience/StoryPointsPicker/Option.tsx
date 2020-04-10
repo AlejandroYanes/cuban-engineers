@@ -23,9 +23,18 @@ const Option: FunctionComponent<Props> = (props) => {
     : undefined;
 
   return (
-    <TouchableOpacity style={pointPickerStyles.option} onPress={() => selectStoryPoint(option.points)}>
+    <TouchableOpacity
+      style={pointPickerStyles.option}
+      onPress={() => selectStoryPoint(option.points)}
+      testID={`story-points-picker-option-${option.points}`}
+    >
       <StoryPoint points={option.points} style={pointStyles} textStyle={pointTextStyles} />
-      <Text style={[pointPickerStyles.optionDescription, descriptionStyles]}>{option.description}</Text>
+      <Text
+        testID="option-description"
+        style={[pointPickerStyles.optionDescription, descriptionStyles]}
+      >
+        {option.description}
+      </Text>
     </TouchableOpacity>
   );
 };
