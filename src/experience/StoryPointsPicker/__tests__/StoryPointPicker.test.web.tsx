@@ -53,6 +53,7 @@ describe('StoryPointPicker component', () => {
       />,
     );
     const firstOption = component.find('Option').at(0);
+    // @ts-ignore
     firstOption.prop('selectStoryPoint')(1);
 
     expect(selectStoryPoint).toHaveBeenCalledWith(1);
